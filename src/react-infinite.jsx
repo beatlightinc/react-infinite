@@ -409,8 +409,8 @@ var Infinite = React.createClass({
   render(): React.Element<any, any, any> {
     var displayables;
     if (this.state.numberOfChildren > 1) {
-      displayables = this.computedProps.children.slice(this.state.displayIndexStart,
-                                                       this.state.displayIndexEnd + 1);
+      displayables = this.computedProps.children;//foo.slice(this.state.displayIndexStart,
+                                                       //this.state.displayIndexEnd + 1);
     } else {
       displayables = this.computedProps.children;
     }
